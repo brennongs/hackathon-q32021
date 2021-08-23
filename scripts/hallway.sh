@@ -1,3 +1,3 @@
-echo "you walk forward"
+cat "./art/bathroom.txt"
 
 exit
