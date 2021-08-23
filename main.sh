@@ -1,4 +1,5 @@
 #!/bin/bash
+export HAS_KEY=false
 
 clear
 
@@ -26,7 +27,7 @@ done <"./texts/entry.txt"
 while true; do
   read -p "> " NESW
   case $NESW in
-    n) ./scripts/hallway.sh
+    n) ./scripts/1.sh
       exit ;;
     e) echo "You see a wall." ;;
     s) echo "You see a wall." ;;
