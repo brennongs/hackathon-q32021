@@ -24,14 +24,14 @@ while read -r LINE; do
 done <"./texts/entry.txt"
 
 while true; do
-  read -p "> " NESW
+  read -p "Enter the direction that you want to move: " NESW
   case $NESW in
     n) ./scripts/hallway.sh
       exit ;;
     e) echo "You see a wall." ;;
     s) echo "You see a wall." ;;
     w) echo "You see a wall." ;;
-    *) echo "Sorry, I can't help with that. Please enter 'n', 'e', 's', 'w', 'u' or 'd'."
+    *) echo "Sorry, I can't help with that. Please enter 'n', 'e', 's', 'w'."
   esac
 done
 
