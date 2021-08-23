@@ -1,0 +1,6 @@
+You find yourself in a dark hallway. All you see on either side are walls, with a hallway going forward. What would you like to do?
+
+n (north/forward)
+e (east/right)
+s (south/back)
+w (west/left)

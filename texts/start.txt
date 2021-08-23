@@ -1,0 +1,15 @@
+Welcome to the Hackathon Hallway 🎉
+
+During this adventure, I will be your eyes and hands.
+Available commands are:
+
+'n' for north,
+'s' for south,
+'e' for east,
+'w' for west,
+
+Ctrl-C quits.
+
+  - - -
+Written by Creed and Brennon.
+  - - -
