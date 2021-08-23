@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "false" > ./state/HAS_KEY
+clear
 
 while read -r LINE; do
   echo "$LINE"
@@ -10,6 +11,9 @@ while read -r LINE; do
 done <"./texts/6.txt"
 
 sleep 1
-read -r -s -p $"Press [ENTER] to exit your simulation."
+echo "This is the end of your simulation"
 
+sleep 2
+echo "Goodbye!"
+exit
 exit
