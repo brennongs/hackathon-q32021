@@ -1,0 +1,5 @@
+You look around and find a key on a table.
+
+[NEW ITEM GAINED]: Key (x1)
+
+You leave the room.

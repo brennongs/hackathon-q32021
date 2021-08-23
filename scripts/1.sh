@@ -1,19 +1,29 @@
-echo $HAS_KEY
-echo "You move forward to the end of the hall. On your left, you see a door, on your right, the hall continues. Make your choice!"
+#!/bin/bash
+clear
+echo "[FILE 1]"
+
+while read -r LINE; do
+  echo "$LINE"
+done <"./texts/1.txt"
+
+echo ""
+
+while read -r LINE; do
+  echo "$LINE"
+done <"./texts/directions.txt"
+
+echo ""
 
 while true; do
-  read -p "Enter the direction that you want to move or [r] to restart the game: " NESW
+  read -p "> " NESW
   case $NESW in
-    n) echo "You see a wall" ;;
-    e) cat ""
+    n) ./scripts/2.sh
       exit ;;
+    e) echo "You see a wall." ;;
     s) echo "You see a wall." ;;
-    w) echo "You try the door, but it is locked, unfortunately." ;;
-    r) exec "./main.sh" ;;
-    *) echo "Sorry, I can't help with that. Please enter 'n', 'e', 's', 'w'."
+    w) echo "You see a wall." ;;
+    *) echo "Sorry, I can't help with that. Please enter 'n', 'e', 's', 'w', 'u' or 'd'."
   esac
 done
 
-cat "./art/bathroom.txt"
-
-exit
+exit 

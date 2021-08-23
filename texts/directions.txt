@@ -1,0 +1,5 @@
+n (north/forward)
+e (east/right)
+s (south/backward)
+w (west/left)
+r (restart)
