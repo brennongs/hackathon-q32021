@@ -14,4 +14,4 @@ read -r -s -p $"Press [ENTER] to continue or [CTRL+C] to exit..."
 
 clear
 sleep .5
-exec ./scripts/1.sh
+exec ./scripts/1.sh n
