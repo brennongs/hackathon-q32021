@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-echo "[FILE 3]"
 
 while read -r LINE; do
   echo "$LINE"

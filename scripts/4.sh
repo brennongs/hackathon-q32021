@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-echo "[FILE 4]"
 
 while read -r LINE; do
   echo "$LINE"
@@ -23,7 +22,8 @@ while true; do
     s) ./scripts/3.sh
       exit ;;
     w) "You see a wall." ;;
-    r) exec "./main.sh" ;;
+    r) ./main.sh
+      exit ;;
     *) echo "Sorry, I can't help with that. Please enter 'n', 'e', 's', 'w'."
   esac
 done

@@ -1,9 +1,7 @@
 #!/bin/bash
 clear
 
-while read -r LINE; do
-  echo "$LINE"
-done <"./art/splash.txt"
+cat ./art/splash.txt
 
 echo
 echo "..."

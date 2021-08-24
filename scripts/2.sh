@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-echo "[FILE 2]"
 
 HAS_KEY=$(cat ./state/HAS_KEY)
 

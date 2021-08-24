@@ -13,9 +13,6 @@ explore() {
 }
 
 clear
-echo $HAS_KEY
-
-echo "[FILE 5]"
 
 while read -r LINE; do
   echo "$LINE"
