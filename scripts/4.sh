@@ -13,9 +13,9 @@ while true; do
   read -p "> " NESW
   case $NESW in
     n) exec ./scripts/5.sh ;;
-    e) "You see a wall." ;;
+    e) cat ./texts/wall.txt ;;
     s) exec ./scripts/3.sh ;;
-    w) "You see a wall." ;;
+    w) cat ./texts/wall.txt ;;
     r) exec ./main.sh ;;
     *) cat ./texts/sorry.txt ;;
   esac

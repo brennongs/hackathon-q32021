@@ -14,7 +14,7 @@ echo ""
 while true; do
   read -p "> " NESW
   case $NESW in
-    n) echo "You see a wall." ;;
+    n) cat ./texts/wall.txt ;;
     e) exec ./scripts/3.sh ;;
     s) exec ./scripts/1.sh ;;
     w) if [ $HAS_KEY = true ]; then
