@@ -2,21 +2,18 @@
 explore() {
   clear
 
-  while read -r LINE; do
-    echo "$LINE"
-  done <"./texts/explore.txt"
+  cat ./texts/explore.txt
 
   echo "true" > ./state/HAS_KEY
 
   sleep .5
-  read -r -s -p $"Press [ENTER] to continue or [CTRL+C] to exit..."
+  echo ""
+  read -r -s -p $"Press [ENTER] to continue..."
 }
 
 clear
 
-while read -r LINE; do
-  echo "$LINE"
-done <"./texts/5.txt"
+cat ./texts/5.txt
 
 echo ""
 
@@ -31,12 +28,10 @@ while true; do
   read -p "> " NESW
   case $NESW in
     n) explore;
-      ./scripts/4.sh
-      exit ;;
-    s) ./scripts/3.sh
-      exit ;;
-    r) exec "./main.sh" ;;
-    *) echo "Sorry, I can't help with that. Please enter 'n', 'e', 's', 'w'."
+      exec ./scripts/4.sh ;;
+    s) exec ./scripts/3.sh ;;
+    r) exec ./main.sh ;;
+    *) cat ./texts/sorry.txt ;;
   esac
 done
 

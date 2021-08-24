@@ -4,15 +4,15 @@ clear
 
 cat ./art/toilet.txt
 
-while read -r LINE; do
-  echo "$LINE"
-done <"./texts/6.txt"
+cat ./texts/6.txt
 
 sleep 1
 echo ""
-echo "This is the end of your simulation"
+echo "This is the end of your simulation."
 
-sleep 2
+sleep 1
 echo ""
 echo "Goodbye!"
+
+sleep 1 
 exit
